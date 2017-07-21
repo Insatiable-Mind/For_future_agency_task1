@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  background-color: #a5b7c1;
+  box-shadow: inset 0 10px 25px -10px $grey-transparent;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  font-size: $middle-small-header;
+  color: $grey-transparent;
+}
+
+.footer__nav-item {
+  flex-grow: 1;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-right: 1px solid $grey-transparent;
+  cursor: pointer;
+
+  &:last-child { border: none; }
+}
+
+.footer__contacts {
+  padding-left: 55px;
+  color: #000;
+}
+
+.footer__contacts-mail-link {
+  color: $orange;
+
+  &:hover { color: $orange-dark; }
+}

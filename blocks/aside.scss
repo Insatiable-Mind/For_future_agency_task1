@@ -1,0 +1,32 @@
+.aside {
+  @extend %container;
+  float: left;
+  max-width: 240px;
+  margin-right: 28px;
+  padding: {
+    top: 22px;
+    bottom: 39px;
+  }
+  background-color: #fff;
+}
+
+.aside__header {
+  margin-bottom: 23px;
+  font-family: HelveticaNeueCyr-Light, sans-serif;
+  font-size: $small-header;
+}
+
+.aside__nav {
+  font-size: $big-text;
+  list-style-type: none;
+}
+
+.aside__nav-item {
+  margin-bottom: 14px;
+  color: $grey-transparent;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover { color: $orange; }
+}
+

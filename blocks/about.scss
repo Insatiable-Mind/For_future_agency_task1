@@ -1,0 +1,16 @@
+.about {
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 25px;
+  }
+  color: #4b4b4b;
+}
+
+.about__header { font-size: $large-header; }
+
+.about__description {
+  font-family: HelveticaNeueCyr-Light, sans-serif;
+  font-size: $middle-header;
+}
+

@@ -1,0 +1,103 @@
+%container {
+  padding: {
+    left: 25px;
+    right: 25px;
+  } 
+}
+
+/* Цвет */
+$color-primary: #484848;
+$grey-transparent: rgba(0,0,0,.4);
+$orange: #eb5825;
+$orange-dark: #c53e11;
+
+/* Размер шрифта */
+$large-header: 4.571rem; // 64px
+$big-header: 2.214rem; // 31px
+$middle-header: 1.857rem; // 26px
+$middle-small-header: 1.714rem; // 24px
+$middle-smaller-header: 1.643rem; // 23px
+$small-header: 1.429rem; // 20px;
+$large-text: 1.286rem; // 18px;
+$big-text: 1.143rem; // 16px;
+$standart-text: 1rem; // 14px;
+
+@font-face {
+  font-family: HelveticaNeueCyr-Roman;
+  src: url("../fonts/HelveticaNeueCyr-Roman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr-Light;
+  src: url("../fonts/HelveticaNeueCyr-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr-Medium;
+  src: url("../fonts/HelveticaNeueCyr-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: HelveticaNeueCyr-Bold;
+  src: url("../fonts/HelveticaNeueCyr-Bold.otf") format("opentype");
+}
+
+* { box-sizing: border-box; }
+
+html {
+  font-family: HelveticaNeueCyr-Roman, sans-serif;
+  font-size: 14px;
+  color: $color-primary;
+  line-height: 1.2;
+}
+
+body { background-color: #e1f0f8; }
+
+.wrapper {
+  max-width: 1145px;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a { color: $color-primary; }
+
+.phone {
+  font-size: 2.214rem;
+  text-decoration: none;
+}
+
+.phone__color_darker {
+  font-size: 1.714rem;
+  color: #000;
+}
+
+.button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 11px 39px;
+  font-size: 1.286rem;
+  color: #fff;
+  background-color: $orange;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover { background-color: #c53e11; }
+
+  &:focus { outline: none; }
+}
+
+.button_text_small {
+  margin: 0;
+  padding: 11px 25px;
+  font-size: 1.143rem;
+}

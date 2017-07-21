@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пластик &amp; Алюминий - Цены</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <img src="img/logo.png" alt="Логотип" class="header__top-logo">
+        <a class="header__top-link" href="#">Рассчитать стоимость</a>
+        <div class="contacts">
+          <span class="contacts__schedule">с 9 до 21 без выходных</span>
+          <a class="phone" href="tel:+74955346533">+7 495 534-65-33</a>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="nav__item" href="#">О компании</a>
+        <a class="nav__item" href="#">Цены</a>
+        <a class="nav__item" href="#">Услуги и продукты</a>
+        <a class="nav__item" href="#">Акции</a>
+        <a class="nav__item" href="#">Контакты</a>
+      </nav>
+    </header>
+
+    <div class="about">
+      <h1 class="about__header">Цветные пластиковые окна</h1>
+      <span class="about__description">Ламинируем профиль ПВХ для предания окнам цвета и фактуры дерева</span>
+    </div>
+
+    <main class="main">
+      <aside class="aside">
+        <h2 class="aside__header">Рекомендуем также</h2>
+        <nav class="aside__nav">
+          <li class="aside__nav-item">Edinburgh by REHAU</li>
+          <li class="aside__nav-item">Estet by REHAU</li>
+          <li class="aside__nav-item">REHAU DELIGHT-Design</li>
+          <li class="aside__nav-item">REHAU BRILLANT-Design</li>
+          <li class="aside__nav-item">REHAU Geneo</li>
+          <li class="aside__nav-item">Цветные окна</li>
+          <li class="aside__nav-item">Стеклопакеты</li>
+          <li class="aside__nav-item">Остекление балконов и лоджий</li>
+          <li class="aside__nav-item">Отделка и утепление балконов</li>
+          <li class="aside__nav-item">Балконные блоки</li>
+        </nav>
+      </aside>
+
+      <div class="main__content">
+        <section class="item">
+          <h2 class="item__header">
+            Создайте выразительный интерьер с цветными окнами REHAU
+          </h2>
+          <figure class="item__photo-container">
+            <img class="item__photo" src="img/window-irish-oak.jpg" alt="Окно 'Ирландский дуб'"/>
+            <figcaption class="item__photo-description">Ирландский дуб</figcaption>
+          </figure>
+          <div class="item__description">
+            <ul class="item__features">
+              <li class="item__features-list">
+                <span>
+                  Точная визуализация натурального дерева.
+                </span>
+              </li>
+              <li class="item__features-list">
+                <span>
+                  Яркие нестандартные цвета в тон или в дополнение интерьера.
+                </span>
+              </li>
+              <li class="item__features-list">
+                <span>
+                  Разные фактуры для Ваших пластиковых окон.
+                </span>
+              </li>
+            </ul>
+            <div class="item__color">
+              <h3 class="item__color-header">
+                Подберите цвет для своих окон:
+              </h3>
+              <div class="item__color-list">
+                <input class="item__color-checkbox" id="color-checkbox-1" name="color-checkbox" type="radio" checked>
+                <label class="item__color-type item__color-type_color1" for="color-checkbox-1"></label>
+                <input class="item__color-checkbox" id="color-checkbox-2" name="color-checkbox" type="radio">
+                <label class="item__color-type item__color-type_color2" for="color-checkbox-2"></label>
+                <input class="item__color-checkbox" id="color-checkbox-3" name="color-checkbox" type="radio">
+                <label class="item__color-type item__color-type_color3" for="color-checkbox-3"></label>
+                <input class="item__color-checkbox" id="color-checkbox-4" name="color-checkbox" type="radio" >
+                <label class="item__color-type item__color-type_color4" for="color-checkbox-4"></label>
+                <input class="item__color-checkbox" id="color-checkbox-5" name="color-checkbox" type="radio">
+                <label class="item__color-type item__color-type_color5" for="color-checkbox-5"></label>
+                <input class="item__color-checkbox" id="color-checkbox-6" name="color-checkbox" type="radio">
+                <label class="item__color-type item__color-type_color6" for="color-checkbox-6"></label>
+                <input class="item__color-checkbox" id="color-checkbox-7" name="color-checkbox" type="radio">
+                <label class="item__color-type item__color-type_color7" for="color-checkbox-7"></label>
+              </div>
+              <div class="item__color-note">
+                Больше 50 вариантов  цветов и фактур спрашивайте у наших замерщиков
+              </div>
+            </div>
+            <div class="price">
+              <div class="price__cost">
+                <span class="price__cost-header">цена:</span>
+                <span class="price__cost-figure">от 4 214 р/м2</span>
+              </div>
+              <div class="price__discount">
+                <span class="price__discount-header">скидка</span>
+                <span class="price__discount-size">-70%</span>
+              </div>
+              <div class="price__period">
+                <span class="price__period-header">действует</span>
+                <span class="price__period-days">с 15 по 20</span>
+                <span class="price__period-month">февраля</span>
+              </div>
+            </div>
+            <button class="button" id="discount-calc">Рассчитать со скидкой 70%</button>
+            <div class="calculation__popup-background" id="calculation__popup-background"></div>
+            <div class="calculation__popup" id="calculation__popup-window">
+              <h2 class="calculation__popup-header">Расчет суммы</h2>
+              <p class="calculation__popup-text" id="calculation__popup-text"></p>
+              <div class="calculation__popup-close" id="calculation__popup-close">x</div>
+            </div>
+            <div class="request">
+              или отправить заявку и получить консультацию
+            </div>
+          </div>
+        </section>
+
+        <section class="extra-info">
+          <div class="extra-info__lamination">
+            <h2 class="extra-info__lamination-header">
+              Зачем использовать ламинацию
+            </h2>
+            <p class="extra-info__lamination-description">
+              Чтобы придать внешнему виду окна оригинальную выразительность, специалисты применяют ламинацию – приём, при помощи которого можно декорировать своё жилье с учетом самых современных веяний дизайнерского искусства.
+            </p>
+            <p class="extra-info__lamination-description">
+              При помощи ламинации оконного профиля можно, например, со всей точностью воспроизвести оттенки и структуру древесины: при этом обеспечивается полная визуализация натурального дерева, точно имитирующая расположение волокон. Помимо имитации деревянных поверхностей, применяют пленку самых разных цветов и фактур.
+            </p>
+          </div>
+          <div class="extra-info__know-how">
+            <h2 class="extra-info__know-how-header">
+              Как окна становятся цветными?
+            </h2>
+            <p class="extra-info__know-how-description">
+              Собственно, процесс ламинации профиля ПВХ состоит в процедуре нанесения на его поверхность декоративных высокопрочных плёнок с применением специального клея и ламинирующих установок.
+            </p>
+            <p class="extra-info__know-how-description">
+              Плёнку прочно соединяют с профилем. При этом внешней стороне пленки свойственна высокая стойкость к повреждениям. В частности, цветное пластиковое окно, прошедшее процесс ламинации, стойко переносит температурные колебания в диапазоне от -80°С до +130°С, оно исключительно стойко к солнечному излучению. 
+            </p>
+            <p class="extra-info__know-how-description">
+              Пластиковые окна, прошедшие процесс ламинации профилей, имеют срок службы гораздо больший, чем не ламинированные окна. В сравнении с окнами из массива дерева, они значительно дешевле.
+            </p>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="reviews__top">
+            <h2 class="reviews__header">
+              Отзывы о цветных пластиковых окнах
+            </h2>
+            <div class="reviews__show-all">
+              посмотреть еще отзывы
+            </div>
+          </div>
+          <div class="reviews__body">
+            <div class="reviews__information">
+              <div class="reviews__information-author">Алена,</div>
+              <div class="reviews__information-contract">Договор № 09.10.33512.13</div>
+              <div class="reviews__information-date">Дата размещения: 13 декабря 2013 года</div>
+            </div>
+            <p class="reviews__text">Поставили нам окна во всей квартире.Все очень понравилось)))компания на 5+.Все очень любезные,гибкая система скидок!!!буду советовать всем!!!Сервис был на высоте,во-первых с поставкой получилось быстрее,во-вторых два раза приезжал замерщик Алексей,ему большое спасибо...</p>
+            <div class="reviews__text-full">прочитать полностью</div>
+            <div class="reviews__bottom">
+              <button class="button button_text_small">оставить отзыв</button>
+              <input class="reviews__checkbox" id="reviews__like-checkbox" type="checkbox">
+              <label class="reviews__like-label" for="reviews__like-checkbox">
+                <div class="reviews__like">мне нравится</div>
+                <div class="reviews__like-sum"></div>
+              </label>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer"> 
+    <div class="wrapper">
+      <nav class="footer__nav">
+        <div class="footer__nav-item">О компании</div>
+        <div class="footer__nav-item">Цены</div>
+        <div class="footer__nav-item">Услуги и продукты</div>
+        <div class="footer__nav-item">Акции</div>
+        <div class="footer__nav-item">Контакты</div>
+      </nav>
+      <div class="footer__contacts">
+        <div class="footer__contacts-phone">
+          Тел.:
+          <a href="tel:+74955346533" class="phone phone__color_darker">
+            +7 495 534-65-33
+          </a>
+          (многоканальный)
+        </div>
+        <div class="footer__contacts-mail">
+          E-mail:
+          <a href="mailto:order@oknapolis.ru" class="footer__contacts-mail-link">
+            order@oknapolis.ru
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

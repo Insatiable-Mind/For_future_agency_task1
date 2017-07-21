@@ -1,0 +1,71 @@
+.extra-info {
+  @extend %container;
+  margin-bottom: 80px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+
+.extra-info__lamination { margin-bottom: 13px; }
+
+.extra-info__lamination-header {
+  margin-bottom: 15px;
+  font-size: $middle-header;
+}
+
+.extra-info__lamination-description {
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/lamination-sprite.png);
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2)::before {
+    width: 55px;
+    height: 53px;
+    background-position: -5px -5px;
+  }
+
+  &:last-child::before {
+    width: 49px;
+    height: 59px;
+    background-position: -70px -5px;
+  }
+}
+
+.extra-info__know-how { padding-bottom: 33px; }
+
+.extra-info__know-how-header {
+  margin-bottom: 15px;
+  font-size: $middle-header;
+}
+
+.extra-info__know-how-description {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 10px;
+    font-family: HelveticaNeueCyr-Medium, sans-serif;
+    font-size: $small-header;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+  }
+
+  &:nth-child(2)::before { content: "1"; }
+
+  &:nth-child(3)::before { content: "2"; }
+
+  &:last-child::before { content: "3"; }
+}

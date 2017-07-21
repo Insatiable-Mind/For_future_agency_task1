@@ -1,0 +1,75 @@
+.header {
+  @extend %container;
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 45px;
+  }
+  background-color: #fff;
+}
+
+.header__top {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+.header__top-logo {
+  flex-grow: 2;
+  max-width: 232px;
+  margin-right: 26.64%;
+}
+
+.header__top-link,
+.contacts {
+  flex-grow: 1;
+  padding-bottom: 13px;
+}
+
+.header__top-link {
+  font-size: $middle-smaller-header;
+  color: $orange;
+
+  &:hover { color:  $orange-dark; }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: $color-primary;
+  text-align: right;
+  opacity: .9;
+}
+
+.contacts__schedule { font-size: $big-text; }
+
+.nav { display: flex; }
+
+.nav__item {
+  flex-grow: 1;
+  margin: 0;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+  font-size: $middle-small-header;
+  color: $color-primary;
+  text-align: center;
+  text-decoration: none;
+  border-right: 1px solid $color-primary;
+  opacity: .8;
+
+  &:first-child { margin-left: -25px; }
+
+  &:last-child {
+    margin-right: -25px;
+    border: none;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #7bc3d5;
+  }
+}
+

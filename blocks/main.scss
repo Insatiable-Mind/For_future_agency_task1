@@ -1,0 +1,12 @@
+.main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main__content {
+  position: relative;
+  float: left;
+  max-width: 877px;
+  background: none;
+}
