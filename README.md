@@ -1,4 +1,6 @@
+https://insatiable-mind.github.io/Plastic-Aluminum/
 Верстка не адаптивная.
+
 Использовались инструменты:
 - Gulp;
 - SCSS.
